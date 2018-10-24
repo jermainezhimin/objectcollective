@@ -1,0 +1,6 @@
+@import '~antd/dist/antd.css';
+
+.banner{
+    height: calc( 100vh - 128px);
+    user-select: none;
+}
