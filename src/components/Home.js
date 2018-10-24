@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { Row, Col, Button } from 'antd';
 import Back from '../assets/back.png';
 import EightP from '../assets/8P.png';
+import FiveP from '../assets/5P.png';
+import TenW from '../assets/10W.png';
+import Temperance from '../assets/temperance.png';
+
 import CaseDay from '../assets/case-day.png';
 import CaseNight from '../assets/case-night.png';
 import Flippy, { FrontSide, BackSide } from 'react-flippy';
@@ -37,8 +41,8 @@ class Home extends Component {
 
                 <Flippy flipOnHover={true} flipOnClick={false} flipDirection="horizontal" ref={(r) => this.flippy = r} 
                     style={{ width: '200px', height: '332px', padding: '0px', position: 'absolute', top: '50%', left: '75%', transform: 'translate(-50%,-50%) rotate(10deg)' }} >
-                    <FrontSide style={{padding: '0px'}}> <img alt='' style={{borderRadius:'20px'}} src={Back}/> </FrontSide>
-                    <BackSide style={{padding: '0px'}}> <img alt='' style={{borderRadius:'20px'}} src={EightP}/> </BackSide>
+                    <FrontSide style={{padding: '0px',borderRadius:'20px',overflow:'hidden'}}> <img alt='' style={{width: '200px', height: '332px'}} src={Back}/> </FrontSide>
+                    <BackSide style={{padding: '0px',borderRadius:'20px',overflow:'hidden'}}> <img alt='' style={{width: '200px', height: '332px'}} src={EightP}/> </BackSide>
                 </Flippy>
             </Row>
             <Row type='flex' justify='center' align='center' style={{height:'500px'}}>
@@ -54,7 +58,7 @@ class Home extends Component {
                             to construct a subconscious reflective narrative based on baysian probability.
                         </div>
 
-                        <div style={{fontSize:'17px', margin: '10px 0px'}}>
+                        <div style={{fontSize:'17px', margin: '30px 0px'}}>
                             This unique tarot deck reimagines the 76 tarot cards as quirky objects. 
                         </div>
                     </div>
@@ -62,29 +66,32 @@ class Home extends Component {
             </Row>
             <Row type='flex' justify='center' align='center' style={{height:'500px'}}>
                 <Col style={{  display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0px calc(5% + 10px) 0px 15%' }} span={12}> 
-                <div>
+                    <div>
                         <div style={{width:'190px', borderBottom: '5px solid grey', fontSize:'30px', fontWeight:'bolder'}} >SUPPORT ME</div>
                         <div style={{fontSize:'17px', margin: '10px 0px'}}>
-                            This project needs help to get into your hands! Check out the kickstarter page to fund the project or leave some feedback.
+                            This project needs help to get into your hands! 
+                        </div>
+                        <div style={{fontSize:'17px', margin: '30px 0px'}}>
+                            If you like what you see, check out the kickstarter page to fund the project or leave some feedback.
                         </div>
                         <Button type='primary' size='large' href='https://www.kickstarter.com/projects/1988162704/360671320?ref=bel4aw&token=d33e9c26'> Help Kickstart </Button>
                     </div>
                 </Col>
-                <Col style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}} span={12}>
+                <Col span={12}>
                     <Flippy flipOnHover={true} flipOnClick={false} flipDirection="horizontal" ref={(r) => this.flippy = r} 
-                        style={{ width: '200px', height: '332px', padding: '0px', position: 'absolute', top: '50%', left: '75%', transform: 'translate(-50%,-50%) rotate(10deg)' }} >
-                        <FrontSide style={{padding: '0px'}}> <img alt='' style={{borderRadius:'20px'}} src={Back}/> </FrontSide>
-                        <BackSide style={{padding: '0px'}}> <img alt='' style={{borderRadius:'20px'}} src={EightP}/> </BackSide>
+                        style={{ zIndex:'10', width: '200px', height: '332px', padding: '0px', position: 'absolute', top: '40%', left: '50%', transform: 'translate(-50%,-50%)' }} >
+                        <FrontSide style={{padding: '0px',borderRadius:'20px',overflow:'hidden' }}> <img alt='' style={{ width: '200px', height: '332px'}} src={Temperance}/> </FrontSide>
+                        <BackSide style={{padding: '0px',borderRadius:'20px',overflow:'hidden'}}> <img alt='' style={{ width: '200px', height: '332px'}} src={Back}/> </BackSide>
                     </Flippy>
                     <Flippy flipOnHover={true} flipOnClick={false} flipDirection="horizontal" ref={(r) => this.flippy = r} 
-                        style={{ width: '200px', height: '332px', padding: '0px', position: 'absolute', top: '50%', left: '75%', transform: 'translate(-50%,-50%) rotate(10deg)' }} >
-                        <FrontSide style={{padding: '0px'}}> <img alt='' style={{borderRadius:'20px'}} src={Back}/> </FrontSide>
-                        <BackSide style={{padding: '0px'}}> <img alt='' style={{borderRadius:'20px'}} src={EightP}/> </BackSide>
+                        style={{ zIndex:'5',width: '200px', height: '332px', padding: '0px', position: 'absolute', top: '50%', left: '75%', transform: 'translate(-50%,-50%) rotate(10deg)' }} >
+                        <FrontSide style={{padding: '0px',borderRadius:'20px',overflow:'hidden' }}> <img alt='' style={{ width: '200px', height: '332px'}} src={Back}/> </FrontSide>
+                        <BackSide style={{padding: '0px',borderRadius:'20px',overflow:'hidden'}}> <img alt='' style={{ width: '200px', height: '332px'}} src={TenW}/> </BackSide>
                     </Flippy>
                     <Flippy flipOnHover={true} flipOnClick={false} flipDirection="horizontal" ref={(r) => this.flippy = r} 
-                        style={{ width: '200px', height: '332px', padding: '0px', position: 'absolute', top: '50%', left: '75%', transform: 'translate(-50%,-50%) rotate(10deg)' }} >
-                        <FrontSide style={{padding: '0px'}}> <img alt='' style={{borderRadius:'20px'}} src={Back}/> </FrontSide>
-                        <BackSide style={{padding: '0px'}}> <img alt='' style={{borderRadius:'20px'}} src={EightP}/> </BackSide>
+                        style={{ zIndex:'5', width: '200px', height: '332px', padding: '0px', position: 'absolute', top: '50%', left: '25%', transform: 'translate(-50%,-50%) rotate(-10deg)' }} >
+                        <FrontSide style={{padding: '0px',borderRadius:'20px',overflow:'hidden' }}> <img alt='' style={{ width: '200px', height: '332px'}} src={Back}/> </FrontSide>
+                        <BackSide style={{padding: '0px',borderRadius:'20px',overflow:'hidden'}}> <img alt='' style={{ width: '200px', height: '332px'}} src={FiveP}/> </BackSide>
                     </Flippy>
                 </Col>
             </Row>
