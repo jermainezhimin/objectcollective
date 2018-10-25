@@ -36,7 +36,10 @@ class Home extends Component {
                         OBJECTIVE
                     </div>
                     <div style={{textAlign:'center', height:'20px', fontSize: '20px', fontWeight: 'lighter'}}>
-                        OBJECT COLLECTIVE: THE DAY AND NIGHT EDITIONS
+                        OBJECT COLLECTIVE TAROT CARDS
+                    </div>
+                    <div style={{textAlign:'center', height:'20px', fontSize: '20px', fontWeight: 'lighter'}}>
+                    THE DAY AND NIGHT EDITIONS
                     </div>
                 </div>
 
@@ -47,31 +50,13 @@ class Home extends Component {
                 </Flippy>
             </Row>
             <Row type='flex' justify='center' align='center' style={{height:'500px'}}>
-                <Col style={{display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0px calc(5% + 10px) 0px 15%' }} span={12}>
-                    <div>
-                        <div style={{width:'110px', borderBottom: '5px solid grey', fontSize:'30px', fontWeight:'bolder'}} > ARTIST  </div>
-                        <div style={{fontSize:'17px', margin: '10px 0px'}}>
-                            Jermaine grew up in Singapore and joined Periscope to work up and down the software stack. 
-                        </div>
-
-                        <div style={{fontSize:'17px', margin: '30px 0px'}}>
-                            He thought typing wasn’t a high value skill until entering ‘rm -rf *’ in the terminal. 
-                            When he isn’t working, he likes duct taping yeast to juice and discovering the ultimate fruit wine!
-                        </div>
-                    </div>
-                </Col>
-                <Col style={{ userSelect:'none', display: 'flex', alignItems: 'center', justifyContent: 'center'}} span={12}> 
-                    <Avatar src={Jermaine} className="grow" style={{height:'400px', width:'400px'}} />
-                </Col>
-            </Row>
-            <Row type='flex' justify='center' align='center' style={{height:'500px'}}>
                 <Col style={{ userSelect:'none', display: 'flex', alignItems: 'center', justifyContent: 'center'}} span={12}> 
                     <div className='case'> <img alt='' src={CaseNight}/> </div>
                     <div className='case'> <img alt='' src={CaseDay}/> </div>
                 </Col>
                 <Col style={{display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0px 15% 0px calc(5% + 10px)' }} span={12}>
                     <div>
-                        <div style={{width:'210px', borderBottom: '5px solid grey', fontSize:'30px', fontWeight:'bolder'}} >BACKGROUND</div>
+                        <div style={{width:'160px', borderBottom: '5px solid grey', fontSize:'30px', fontWeight:'bolder'}} >PRODUCT</div>
                         <div style={{fontSize:'17px', margin: '10px 0px'}}>
                             Object collective started as Jermaine's side project. It explores the idea of using tarot cards
                             to construct a subconscious reflective narrative based on baysian probability.
@@ -84,18 +69,24 @@ class Home extends Component {
                 </Col>
             </Row>
             <Row type='flex' justify='center' align='center' style={{height:'500px'}}>
-                <Col style={{  display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0px calc(5% + 10px) 0px 15%' }} span={12}> 
+                <Col style={{display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0px calc(5% + 10px) 0px 15%' }} span={12}>
                     <div>
-                        <div style={{width:'190px', borderBottom: '5px solid grey', fontSize:'30px', fontWeight:'bolder'}} >SUPPORT ME</div>
+                        <div style={{width:'130px', borderBottom: '5px solid grey', fontSize:'30px', fontWeight:'bolder'}} > CREATOR  </div>
                         <div style={{fontSize:'17px', margin: '10px 0px'}}>
-                            This project needs help to get into your hands! 
+                            Jermaine grew up in Singapore and works in Periscope Data to work up and down the software stack. 
                         </div>
+
                         <div style={{fontSize:'17px', margin: '30px 0px'}}>
-                            If you like what you see, check out the kickstarter page to fund the project or leave some feedback.
+                            He thought typing wasn’t a high value skill until entering ‘rm -rf *’ in the terminal. 
+                            When he isn’t working, he likes duct taping yeast to juice and discovering the ultimate fruit wine!
                         </div>
-                        <Button type='primary' size='large' href='https://www.kickstarter.com/projects/1988162704/360671320?ref=bel4aw&token=d33e9c26'> Help Kickstart </Button>
                     </div>
                 </Col>
+                <Col style={{ userSelect:'none', display: 'flex', alignItems: 'center', justifyContent: 'center'}} span={12}> 
+                    <Avatar src={Jermaine} className="grow" style={{height:'400px', width:'400px'}} />
+                </Col>
+            </Row>
+            <Row type='flex' justify='center' align='center' style={{height:'500px'}}>   
                 <Col span={12}>
                     <Flippy flipOnHover={true} flipOnClick={false} flipDirection="horizontal" ref={(r) => this.flippy = r} 
                         style={{ zIndex:'10', width: '200px', height: '332px', padding: '0px', position: 'absolute', top: '40%', left: '50%', transform: 'translate(-50%,-50%)' }} >
@@ -112,6 +103,18 @@ class Home extends Component {
                         <FrontSide style={{padding: '0px',borderRadius:'20px',overflow:'hidden' }}> <img alt='' style={{ width: '200px', height: '332px'}} src={Back}/> </FrontSide>
                         <BackSide style={{padding: '0px',borderRadius:'20px',overflow:'hidden'}}> <img alt='' style={{ width: '200px', height: '332px'}} src={FiveP}/> </BackSide>
                     </Flippy>
+                </Col>
+                <Col style={{  display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0px 15% 0px calc(5% + 10px)' }} span={12}> 
+                    <div>
+                        <div style={{width:'190px', borderBottom: '5px solid grey', fontSize:'30px', fontWeight:'bolder'}} >SUPPORT ME</div>
+                        <div style={{fontSize:'17px', margin: '10px 0px'}}>
+                            This project needs help to get into your hands! 
+                        </div>
+                        <div style={{fontSize:'17px', margin: '30px 0px'}}>
+                            If you like what you see, check out the kickstarter page to fund the project or leave some feedback.
+                        </div>
+                        <Button type='primary' size='large' href='https://www.kickstarter.com/projects/1988162704/360671320?ref=bel4aw&token=d33e9c26'> Help Kickstart </Button>
+                    </div>
                 </Col>
             </Row>
         </div>
