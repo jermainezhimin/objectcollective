@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import { Layout, Menu } from 'antd';
-import logo from './assets/logo.png';
+import { Layout, Menu, Avatar } from 'antd';
+import Logo from './assets/logo.png';
+import Jermaine from './assets/jermaine.jpg';
 import './App.css';
 
 import Home from './components/Home';
@@ -19,8 +20,8 @@ class App extends Component {
           <Header style={{ position: 'fixed', zIndex: 1, width: '100%', padding: '0px 0px' }}>
             <div className="logo"> 
               <div>
-                <img src={logo} alt='' />
-                <p >OBJECTIVE COLLECTIVE</p>
+                <img src={Logo} alt='' />
+                <p >OBJECT COLLECTIVE</p>
               </div>
             </div>
             <Menu theme="light" mode="horizontal"
@@ -38,7 +39,11 @@ class App extends Component {
 
           
           <Footer style={{ textAlign: 'center' }}>
-            Object Collective ©2018 Created by <a href="http://www.jermainecheng.com">Jermaine Cheng</a> x <a href="mailto:beachcombersemporium@gmail.com">Beachcomber's Emporium</a>
+            Object Collective ©2018 Created by <a href="http://www.jermainecheng.com">Jermaine Cheng</a> x <a href="mailto:beachcombersemporium@gmail.com">Beachcomber's Emporium</a> 
+            <div style={{float:"right"}}>
+              <Avatar style={{margin:'auto 5px'}} src={Jermaine}/> 
+              <Avatar style={{margin:'auto 5px', background:'orange'}}>BE</Avatar>
+            </div>
           </Footer>
         </Layout>
       </Router>

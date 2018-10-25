@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import { Row, Col, Button } from 'antd';
+import { Row, Col, Button, Avatar } from 'antd';
 import Back from '../assets/back.png';
 import EightP from '../assets/8P.png';
 import FiveP from '../assets/5P.png';
 import TenW from '../assets/10W.png';
 import Temperance from '../assets/temperance.png';
+import Jermaine from '../assets/jermaine.jpg';
 
 import CaseDay from '../assets/case-day.png';
 import CaseNight from '../assets/case-night.png';
@@ -46,6 +47,24 @@ class Home extends Component {
                 </Flippy>
             </Row>
             <Row type='flex' justify='center' align='center' style={{height:'500px'}}>
+                <Col style={{display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0px calc(5% + 10px) 0px 15%' }} span={12}>
+                    <div>
+                        <div style={{width:'110px', borderBottom: '5px solid grey', fontSize:'30px', fontWeight:'bolder'}} > ARTIST  </div>
+                        <div style={{fontSize:'17px', margin: '10px 0px'}}>
+                            Jermaine grew up in Singapore and joined Periscope to work up and down the software stack. 
+                        </div>
+
+                        <div style={{fontSize:'17px', margin: '30px 0px'}}>
+                            He thought typing wasn’t a high value skill until entering ‘rm -rf *’ in the terminal. 
+                            When he isn’t working, he likes duct taping yeast to juice and discovering the ultimate fruit wine!
+                        </div>
+                    </div>
+                </Col>
+                <Col style={{ userSelect:'none', display: 'flex', alignItems: 'center', justifyContent: 'center'}} span={12}> 
+                    <Avatar src={Jermaine} className="grow" style={{height:'400px', width:'400px'}} />
+                </Col>
+            </Row>
+            <Row type='flex' justify='center' align='center' style={{height:'500px'}}>
                 <Col style={{ userSelect:'none', display: 'flex', alignItems: 'center', justifyContent: 'center'}} span={12}> 
                     <div className='case'> <img alt='' src={CaseNight}/> </div>
                     <div className='case'> <img alt='' src={CaseDay}/> </div>
@@ -54,7 +73,7 @@ class Home extends Component {
                     <div>
                         <div style={{width:'210px', borderBottom: '5px solid grey', fontSize:'30px', fontWeight:'bolder'}} >BACKGROUND</div>
                         <div style={{fontSize:'17px', margin: '10px 0px'}}>
-                            Objective collective started as Jermaine's side project. It explores the idea of using tarot cards
+                            Object collective started as Jermaine's side project. It explores the idea of using tarot cards
                             to construct a subconscious reflective narrative based on baysian probability.
                         </div>
 

@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
-import { Row, Carousel } from 'antd';
-import Particles from 'react-particles-js';
+import { Carousel } from 'antd';
+import Banner1 from '../assets/banner1.png';
+import Banner2 from '../assets/banner2.png';
+import Banner3 from '../assets/banner3.png';
 import './Cards.css';
 
 class Cards extends Component {
   render() {
     return (
         <Carousel autoplay>
-          <div className='banner'><h3>1</h3></div>
-          <div className='banner'><h3>2</h3></div>
-          <div className='banner'><h3>3</h3></div>
-          <div className='banner'><h3>4</h3></div>
+            <img className="cardbanner" src={Banner1} alt='' />
+            <img className="cardbanner" src={Banner2} alt='' />
+            <img className="cardbanner" src={Banner3} alt='' />
         </Carousel>
+
     );
   }
 }
