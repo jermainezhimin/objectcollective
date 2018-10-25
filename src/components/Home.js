@@ -73,7 +73,7 @@ class Home extends Component {
                     <div>
                         <div style={{width:'130px', borderBottom: '5px solid grey', fontSize:'30px', fontWeight:'bolder'}} > CREATOR  </div>
                         <div style={{fontSize:'17px', margin: '10px 0px'}}>
-                            Jermaine grew up in Singapore and works in Periscope Data to work up and down the software stack. 
+                            Jermaine grew up in Singapore and works in Periscope Data to run up and down the software stack. 
                         </div>
 
                         <div style={{fontSize:'17px', margin: '30px 0px'}}>
