@@ -49,12 +49,12 @@ class Home extends Component {
                     <BackSide style={{padding: '0px',borderRadius:'20px',overflow:'hidden'}}> <img alt='' style={{width: '200px', height: '332px'}} src={EightP}/> </BackSide>
                 </Flippy>
             </Row>
-            <Row type='flex' justify='center' align='center' style={{height:'500px'}}>
-                <Col style={{ userSelect:'none', display: 'flex', alignItems: 'center', justifyContent: 'center'}} span={12}> 
+            <Row type='flex' justify='center' align='center' style={{minHeight:'500px'}}>
+                <Col style={{ minWidth:'500px', minHeight:'500px', userSelect:'none', display: 'flex', alignItems: 'center', justifyContent: 'center'}} span={12}> 
                     <div className='case'> <img alt='' src={CaseNight}/> </div>
                     <div className='case'> <img alt='' src={CaseDay}/> </div>
                 </Col>
-                <Col style={{display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0px 15% 0px calc(5% + 10px)' }} span={12}>
+                <Col style={{ minWidth:'500px', minHeight:'500px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0px 15% 0px calc(5% + 10px)' }} span={12}>
                     <div>
                         <div style={{width:'160px', borderBottom: '5px solid grey', fontSize:'30px', fontWeight:'bolder'}} >PRODUCT</div>
                         <div style={{fontSize:'17px', margin: '10px 0px'}}>
@@ -68,8 +68,8 @@ class Home extends Component {
                     </div>
                 </Col>
             </Row>
-            <Row type='flex' justify='center' align='center' style={{height:'500px'}}>
-                <Col style={{display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0px calc(5% + 10px) 0px 15%' }} span={12}>
+            <Row type='flex' justify='center' align='center' style={{minheight:'500px'}}>
+                <Col style={{ minWidth:'500px', minHeight:'500px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0px calc(5% + 10px) 0px 15%' }} span={12}>
                     <div>
                         <div style={{width:'130px', borderBottom: '5px solid grey', fontSize:'30px', fontWeight:'bolder'}} > CREATOR  </div>
                         <div style={{fontSize:'17px', margin: '10px 0px'}}>
@@ -82,12 +82,12 @@ class Home extends Component {
                         </div>
                     </div>
                 </Col>
-                <Col style={{ userSelect:'none', display: 'flex', alignItems: 'center', justifyContent: 'center'}} span={12}> 
+                <Col style={{ minWidth:'500px', minHeight:'500px', userSelect:'none', display: 'flex', alignItems: 'center', justifyContent: 'center'}} span={12}> 
                     <Avatar src={Jermaine} className="grow" style={{height:'400px', width:'400px'}} />
                 </Col>
             </Row>
-            <Row type='flex' justify='center' align='center' style={{height:'500px'}}>   
-                <Col span={12}>
+            <Row type='flex' justify='center' align='center' style={{minheight:'500px'}}>   
+                <Col style={{minWidth:'500px', minHeight:'500px'}} span={12}>
                     <Flippy flipOnHover={true} flipOnClick={false} flipDirection="horizontal" ref={(r) => this.flippy = r} 
                         style={{ zIndex:'10', width: '200px', height: '332px', padding: '0px', position: 'absolute', top: '40%', left: '50%', transform: 'translate(-50%,-50%)' }} >
                         <FrontSide style={{padding: '0px',borderRadius:'20px',overflow:'hidden' }}> <img alt='' style={{ width: '200px', height: '332px'}} src={Temperance}/> </FrontSide>
@@ -104,7 +104,7 @@ class Home extends Component {
                         <BackSide style={{padding: '0px',borderRadius:'20px',overflow:'hidden'}}> <img alt='' style={{ width: '200px', height: '332px'}} src={FiveP}/> </BackSide>
                     </Flippy>
                 </Col>
-                <Col style={{  display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0px 15% 0px calc(5% + 10px)' }} span={12}> 
+                <Col style={{ minWidth:'500px', minHeight:'500px', display: 'flex', alignItems: 'center', justifyContent: 'center', padding: '0px 15% 0px calc(5% + 10px)' }} span={12}> 
                     <div>
                         <div style={{width:'190px', borderBottom: '5px solid grey', fontSize:'30px', fontWeight:'bolder'}} >SUPPORT ME</div>
                         <div style={{fontSize:'17px', margin: '10px 0px'}}>

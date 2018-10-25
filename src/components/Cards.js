@@ -9,9 +9,9 @@ class Cards extends Component {
   render() {
     return (
         <Carousel autoplay>
-            <img className="cardbanner" src={Banner1} alt='' />
-            <img className="cardbanner" src={Banner2} alt='' />
-            <img className="cardbanner" src={Banner3} alt='' />
+            <div style={{overflow:'hidden'}}><img className="cardbanner" src={Banner1} alt='' /></div>
+            <div style={{overflow:'hidden'}}><img className="cardbanner" src={Banner2} alt='' /></div>
+            <div style={{overflow:'hidden'}}><img className="cardbanner" src={Banner3} alt='' /></div>
         </Carousel>
 
     );
