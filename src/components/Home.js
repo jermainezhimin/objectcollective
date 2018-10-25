@@ -63,7 +63,7 @@ class Home extends Component {
                         </div>
 
                         <div style={{fontSize:'17px', margin: '30px 0px'}}>
-                            This unique tarot deck reimagines the 76 tarot cards as quirky objects. 
+                            This unique tarot deck reimagines the 78 tarot cards as quirky objects. 
                         </div>
                     </div>
                 </Col>
